@@ -1403,7 +1403,7 @@
 
 
 
-// // Q-32.Write a program that categorizes a person’s age group based on the given age:
+// // Q-32.Write a program that categorizes a personï¿½s age group based on the given age:
 
 
 // // Approach-1
@@ -1575,14 +1575,14 @@
 
 // // Approach-1
 
-//#include <iostream>
-//using namespace std;
-//
-//int main() {
+// #include <iostream>
+// using namespace std;
+
+// int main() {
 //    int arr[] = {10, 20, 30, 40, 50};
 //    cout << "[" << arr[0] << ", " << arr[4] << "]" << endl;
 //    return 0;
-//}
+// }
 
 
 // // Approach-2
@@ -1621,4 +1621,152 @@
 
 // Approach-1
 
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int n;
+//     cout<<"enter number of rows you want : ";
+//     cin >> n;
+
+
+// for(int i=0;i<n;i++){
+//     for(int j=0;j<n-i;j++){
+//         cout << "*";
+//     }
+//     cout<<endl;
+// }
+// return 0;
+// }
+
+
+// Approach-2
+
+// #include <iostream>
+// using namespace std;
+
+// int main() {
+//     int n;
+//     cout << "Enter number of rows: ";
+//     cin >> n;
+    
+//     for (int i = 0; i < n; i++) {
+//         cout << string(n - i, '*') << endl;
+//     }
+
+//     return 0;
+// }
+
+
+
+// // Q-36. Print a pyramid pattern with n rows.
+
+// Approach-1(In For Loop)
+
+// #include <iostream>
+// using namespace std;
+
+// int main() {
+//     int n;
+//     cout << "Enter number of rows: ";
+//     cin >> n;
+
+//     for (int i = 0; i < n; i++) {
+//         for (int j = 0; j < n - i - 1; j++) {
+//             cout << " ";
+//         }
+
+//         for (int j = 0; j < 2 * i + 1; j++) {
+//             cout << "*";
+//         }
+
+//         cout << endl;
+//     }
+
+//     return 0;
+// }
+
+// Approach-1(In While Loop)
+
+// #include <iostream>
+// using namespace std;
+
+// int main() {
+//     int n;
+//     cout << "Enter number of rows: ";
+//     cin >> n;
+
+//     int i = 0;
+//     while (i < n) {
+//         int j = 0;
+
+//         while (j < n - i - 1) {
+//             cout << " ";
+//             j++;
+//         }
+
+//         j = 0;
+//         while (j < 2 * i + 1) {
+//             cout << "*";
+//             j++;
+//         }
+
+//         cout << endl;
+//         i++;
+//     }
+
+//     return 0;
+// }
+
+
+// Approach-2
+
+// #include <iostream>
+// #include <string>
+// using namespace std;
+
+// int main() {
+//     int n;
+//     cout << "Enter number of rows: ";
+//     cin >> n;
+
+//     for (int i = 0; i < n; i++) {
+//         string row = "";
+//         row += string(n - i - 1, ' ');
+//         row += string(2 * i + 1, '*');
+//         cout << row << endl;
+//     }
+//     return 0;
+// }
+
+// Approach-3
+
+// #include <iostream>
+// using namespace std;
+
+// void printPyramid(int n) {
+//     for (int i = 1; i <= n; i++) {
+//         for (int j = 1; j <= n - i; j++) {
+//             cout << " ";
+//         }
+//         for (int k = 1; k <= 2 * i - 1; k++) {
+//             cout << "*";
+//         }
+//         cout << endl;
+//     }
+// }
+
+// int main() {
+//     int n;
+//     cout << "Enter the number of rows: ";
+//     cin >> n;
+//     printPyramid(n);
+//     return 0;
+// }
+
+
+// // Q-37. Given a sorted array and a target value, return the starting and ending position of that target in the array.Example:Input: [5, 7, 7, 8, 8, 10], target=8 ,Output: [3, 4]
+
+
+// Approach-1
 
